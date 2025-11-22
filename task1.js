@@ -11,13 +11,13 @@ let totalLength = str1.length + str2.length;
 console.log(totalLength);
 
 
-let a = +prompt("Введите первое число:");
-let b = +prompt("Введите второе число:");
+let c = +prompt("Введите первое число:");
+let d = +prompt("Введите второе число:");
 
-if (a > b) {
-    console.log("Наибольшее число: " + a);
-} else if (b > a) {
-    console.log("Наибольшее число: " + b);
+if (c > d) {
+    console.log("Наибольшее число: " + c);
+} else if (d > c) {
+    console.log("Наибольшее число: " + d);
 } else {
     console.log("Числа равны");
 }
@@ -98,17 +98,17 @@ for (let i = 0; i < array.length; i++) {
 console.log("2. Новый массив с удвоенными элементами:", doubledArray);
 
 //задание 6
-let a = +prompt("Введите первое число:");
-let b = +prompt("Введите второе число:");
+let f = +prompt("Введите первое число:");
+let g = +prompt("Введите второе число:");
 
-function diff(a, b) {
-    if (a > b) {
-        return a - b;
+function diff(f, g) {
+    if (f > g) {
+        return f - g;
     }
-    return b - a;
+    return g - f;
 }
 
-console.log("Разница между числами:", diff(a, b));
+console.log("Разница между числами:", diff(f, g));
 
 let text = prompt("Введите текст:");
 
@@ -179,11 +179,11 @@ let minutes = Math.floor((now - startOfDay) / (1000 * 60));
 console.log("Минут с начала дня: " + minutes);
 
 // задание 9
-let a = +prompt("Введите длину первой стороны треугольника:");
-let b = +prompt("Введите длину второй стороны треугольника:");
-let c = +prompt("Введите длину третьей стороны треугольника:");
+let h = +prompt("Введите длину первой стороны треугольника:");
+let k = +prompt("Введите длину второй стороны треугольника:");
+let l = +prompt("Введите длину третьей стороны треугольника:");
 
-if (a * a + b * b === c * c || a * a + c * c === b * b || b * b + c * c === a * a) {
+if (h * h + k * k === l * l || h * h + l * l === k * k || k * k + l * l === h * h) {
     console.log("Треугольник прямоугольный");
 } else {
     console.log("Треугольник НЕ прямоугольный");
