@@ -52,12 +52,12 @@ if (monthNumber === 1) {
     console.log("Ошибка! Введите число от 1 до 12");
 }
 
-let sum = 0; 
-let number = 50;
+let summ = 0; 
+let numbers = 50;
 
-while (number <= 100) {
-    sum = sum + number; 
-    number = number + 1; 
+while (numbers <= 100) {
+    sum = summ + numbers; 
+    numbers = numbers + 1; 
 }
 
 console.log("Сумма всех целых чисел от 50 до 100: " + sum);
@@ -85,11 +85,11 @@ console.log(role);
 //задание 5
 let array = [4, 7, 12, 5, 9, 3, 15, 8, 6, 11];
 console.log("Исходный массив:", array);
-let sum = 0;
+let sumt = 0;
 for (let i = 0; i < array.length; i++) {
-    sum = sum + array[i];
+    sum = sumt + array[i];
 }
-console.log("1. Сумма всех элементов массива:", sum);
+console.log("1. Сумма всех элементов массива:", sumt);
 let doubledArray = [];
 for (let i = 0; i < array.length; i++) {
     doubledArray.push(array[i] * 2); 
@@ -122,47 +122,6 @@ function isWord(text) {
 }
 
 console.log(isWord(text));
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>DOM задание</title>
-</head>
-<body>
-    <p>Первый параграф</p>
-    <p>Второй параграф</p>
-    <p>Третий параграф</p>
-    
-    <input type="text" id="textInput">
-    <button id="addButton">Добавить параграф</button>
-    
-    <script src="script.js"></script>
-</body>
-</html>
-
-let input = document.getElementById('textInput');
-let button = document.getElementById('addButton');
-
-button.style.display = 'none';
-
-input.oninput = function() {
-    if (input.value === '') {
-        button.style.display = 'none'; 
-    } else {
-        button.style.display = 'block';
-    }
-};
-
-button.onclick = function() {
-  
-    let newParagraph = document.createElement('p');
-    newParagraph.textContent = input.value;
-    
-    document.body.insertBefore(newParagraph, input);
-   
-    input.value = '';
-    button.style.display = 'none';
-};
 
 //задание 8
 
@@ -197,7 +156,7 @@ console.log("Длина окружности: " + length.toFixed(2));
 console.log("Площадь круга: " + area.toFixed(2));
 
 
-let userInput = prompt("Введите строку для проверки:");
+let userInput = prompt("Введите строку:"); 
 
 const dateReg = /\d{1,2}[\.\/]\d{2}[\.\/]\d{2,4}/;
 if (dateReg.test(userInput)) {
