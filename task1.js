@@ -1,18 +1,18 @@
-const a = 5;
-const b = 3;
-const product = a * b;
-const sum = a + b;
+let a = 5;
+let b = 3;
+let product = a * b;
+let sum = a + b;
 console.log(product);
 console.log(sum);
 
-const str1 = "Hello";
-const str2 = "World";
-const totalLength = str1.length + str2.length;
+let str1 = "Hello";
+let str2 = "World";
+let totalLength = str1.length + str2.length;
 console.log(totalLength);
 
 
-const a = +prompt("Введите первое число:");
-const b = +prompt("Введите второе число:");
+let a = +prompt("Введите первое число:");
+let b = +prompt("Введите второе число:");
 
 if (a > b) {
     console.log("Наибольшее число: " + a);
@@ -83,14 +83,14 @@ console.log(ageAdmin);
 console.log(role);
 
 //задание 5
-const array = [4, 7, 12, 5, 9, 3, 15, 8, 6, 11];
+let array = [4, 7, 12, 5, 9, 3, 15, 8, 6, 11];
 console.log("Исходный массив:", array);
 let sum = 0;
 for (let i = 0; i < array.length; i++) {
     sum = sum + array[i];
 }
 console.log("1. Сумма всех элементов массива:", sum);
-const doubledArray = [];
+let doubledArray = [];
 for (let i = 0; i < array.length; i++) {
     doubledArray.push(array[i] * 2); 
 }
@@ -201,14 +201,14 @@ let userInput = prompt("Введите строку для проверки:");
 
 const dateReg = /\d{1,2}[\.\/]\d{2}[\.\/]\d{2,4}/;
 if (dateReg.test(userInput)) {
-    console.log("✓ Это дата");
+    console.log("Это дата");
 } else {
-    console.log("✗ Это НЕ дата");
+    console.log("Это НЕ дата");
 }
 
 const emailReg = /[\da-z\.]+@[\da-z]+\.[a-z]+/;
 if (emailReg.test(userInput)) {
-    console.log("✓ Это email");
+    console.log("Это email");
 } else {
-    console.log("✗ Это НЕ email");
+    console.log("Это НЕ email");
 }
